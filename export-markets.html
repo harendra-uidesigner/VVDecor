@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>VV Decor :: Export Markets</title>
+  <meta name="description" content="VV Decor" />
+  <meta name="title" content="VV Decor" />
+  <meta name="keywords" content="VV Decor" />
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/custom-style.css" />
+
+</head>
+
+<body>
+  <div class="site-container">
+    <div class="site-pusher">
+
+      <header class="header">
+
+        <a href="#" class="header__icon" id="header__icon"></a>
+        <a href="#" class="header__logo"><img src="assets/images/logo_png.png" alt="VV Decor" /></a>
+
+        <nav class="menu">
+          <a href="index.html">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="product.html">Product</a>
+          <a href="export-markets.html" class="active">Export Markets</a>
+          <a href="contact-us.html">Contact Us</a>
+        </nav>
+        <div class="social_links">
+          <ul>
+            <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="site-content">
+
+        <!-- Home Content -->
+        <div class="main-container">
+
+          <div class="sec-title">
+            <h1>Export Markets</h1>
+            <div class="separator"></div>
+          </div>
+
+          <div class="content-desc target-markets">
+            <div class="wrapper">
+
+              <div class="desc-view margin2em">
+                <p>While maintaining best and ethical business practices ,we try our best to manage a synergy with our customers
+                  and prospects for mutual business growth. We look at our customers and prospects as our business partners
+                  and as a mission , we involve ourselves to give them a good product at a best price and on time delivery.</p>
+              </div>
+
+              <div class="row target-markets-list">
+                <div class="col col-md-5">
+                  <div class="desc-view">
+                    <h2>Target Markets</h2>
+                    <ul>
+                      <li>USA</li>
+                      <li>UK</li>
+                      <li>EU</li>
+                      <li>MIDDLE EAST</li>
+                      <li>FAR EAST</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col col-md-offset-1 col-md-6">
+                  <img src="assets/images/map_locations.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer_logo">
+            <img src="assets/images/logo_white.png" alt="" />
+          </div>
+          <p class="copy-right">© Copyright 2019 All Rights Reserved.</p>
+          <div class="footer_links">
+            <ul>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Provide Feedback</a></li>
+            </ul>
+          </div>
+        </footer>
+
+      </div> <!-- END site-content -->
+
+      <div class="site-cache" id="site-cache"></div>
+    </div> <!-- END site-pusher -->
+  </div> <!-- END site-container -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      (function ($) {
+
+        $('#header__icon').click(function (e) {
+          e.preventDefault();
+          $('body').toggleClass('with--sidebar');
+        });
+
+        $('#site-cache').click(function (e) {
+          $('body').removeClass('with--sidebar');
+        });
+
+      })(jQuery);
+
+    });
+  </script>
+</body>
+
+</html>
