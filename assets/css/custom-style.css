@@ -724,6 +724,30 @@ input[type="submit"]{
         padding-left: 5px;
         padding-right: 5px;
     }
+    .success-popup .modal-body img{
+        width: 80px;
+    }
+    .success-popup .modal-body h3{
+        font-size: 26px;
+    }
+    .success-popup .modal-body p{
+        font-size: 14px;
+    }
+    .contact-form .form-group{
+        margin-bottom: 15px;
+    }
+    .contact-info .info-block .inner-box p{
+        font-size: 16px;
+    }
+    .contact-info .info-block .inner-box p.address{
+     font-size: 13px;
+    }
+    .contact-info{
+        margin-top: 25px;
+    }
+    .contact-info .info-block .inner-box h4{
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 320px) {
     .header__logo {
