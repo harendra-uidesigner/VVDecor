@@ -4,38 +4,38 @@ $(function () {
 
     $('#contact').validate({
         rules: {
-            txtName: {
+            name: {
                 required: true,
                 myfileld: true
             },
-            txtEmail: {
+            email: {
                 required: true,
                 email: true
             },
-            phnnumber: {
+            phone: {
                 required: true,
                 digits: true,
                 minlength: 10
             },
-            txtMessage: {
+            message: {
                 required: true
             }
         },
 
         messages: {
-            txtName: {
+            name: {
                 required: "Please enter your name"
 
             },
-            txtEmail: {
+            email: {
                 required: "You have entered an invalid email address!"
             },
-            phnnumber: {
+            phone: {
                 required: "This field is required",
                 digits: "This field can only contain numbers",
                 minlength: "This field must contain at least 10 characters"
             },
-            txtMessage: {
+            message: {
                 required: "You have to write something to send this form."
             }
         },
@@ -47,8 +47,9 @@ $(function () {
                 url: "https://script.google.com/macros/s/AKfycbylyQjIl1gu5rgDBlO02nwQyG5kkdxev1qJx2E4LNBQFsVSO--R/exec",
                 success: function () {
                   //  window.location.href = 'ThankYou.html'; 
-                    $('#success').fadeIn();
-                    setTimeout(function () { $('#success').fadeOut('slow'); }, 3000);
+                  //  $('#success').fadeIn();
+                  //  setTimeout(function () { $('#success').fadeOut('slow'); }, 3000);
+                    $('#success-modal').modal('show');
                     $('#contact').trigger('reset');
                 },
                 error: function () {

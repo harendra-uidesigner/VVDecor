@@ -57,28 +57,26 @@
                   <!--Contact Form-->
                   <div class="contact-form">
 
-                    <div id="success"><span>Thank You Very Much for contacting Us. Our service representative will keep in
-                        touch with you.</span></div>
                     <div id="error"><span>Something went wrong, try refreshing and submitting the form again.</span></div>
 
                     <form class="gform" id="contact" method="post" name="contact">
                       <div class="row clearfix">
                         <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="name" id="txtName" value="" placeholder="Name *" required />
+                          <input type="text" name="name" id="name" value="" placeholder="Name *" required />
                         </div>
                         <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                          <input type="email" name="email" id="txtEmail" placeholder="Email *" required />
+                          <input type="email" name="email" id="email" placeholder="Email *" required />
                         </div>
                         <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="phone" id="phnnumber" placeholder="Phone *" required />
+                          <input type="text" name="phone" id="phone" placeholder="Phone *" required />
                         </div>
                         <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="subject" id="txtsubject" placeholder="Subject *" required />
+                          <input type="text" name="subject" id="subject" placeholder="Subject *" required />
                         </div>
 
                         <div class="column col-md-12 col-sm-12 col-xs-12">
                           <div class="form-group">
-                            <textarea name="message" id="txtMessage" placeholder="Type Your Message *" required></textarea>
+                            <textarea name="message" id="message" placeholder="Type Your Message *" required></textarea>
                           </div>
                         </div>
 
@@ -89,8 +87,26 @@
                         </div>
 
                       </div>
-
                     </form>
+
+
+                    <!-- Modal Success Popup -->
+                    <div class="modal fade success-popup" id="success-modal" tabindex="-1" role="dialog">
+                      <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                          
+                          <div class="modal-body text-center">
+                            <img src="assets/images/success.svg" alt="" />
+                            <h3>Thank You !</h3>
+                              <p class="lead">Contact form successfully submitted. Our service representative will keep in
+                                  touch with you.</p>
+                              <a href="javascript:void(0);" data-dismiss="modal"  class="rd_more btn btn-default">Done</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                   <!--End Contact Form-->
                 </div>

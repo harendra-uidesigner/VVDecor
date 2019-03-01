@@ -395,13 +395,15 @@ input[type="submit"]{
 .contact-form input.error,
 .contact-form select.error,
 .contact-form textarea.error {
-    border-color: rgba(255, 0, 0, 0.7);
+    border-color: rgba(255, 0, 0, 0.5);
 }
+/*
 .contact-form input.valid,
 .contact-form select.valid,
 .contact-form textarea.valid {
   border-color: rgba(0, 128, 0, 0.6);
 }
+*/
 .contact-form label.error {
     line-height: 24px;
     padding: 5px 0px 0px;
@@ -487,6 +489,40 @@ input[type="submit"]{
     color: #ffffff;
     border-radius: 2px;
 }
+.success-popup {
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    -ms-transition: .3s ease all;
+}
+.success-popup .modal-content{
+    border: none;
+}
+.success-popup .modal-body{
+ padding: 5%;
+}
+.success-popup .modal-body img{
+ width: 100px;
+}
+.success-popup .modal-body h3{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.success-popup .modal-body p{
+    font-size: 18px;
+    margin: 20px auto;
+}
+.success-popup .rd_more{
+    color: #FFF;
+    background-color: #03A9F4;
+    border:none;
+    padding: 10px 30px;
+}
+.success-popup .rd_more:hover{
+  background-color: #42c4ff;
+}
 /* RESPONSIVE */
 @media only screen and (max-width: 1024px) {
     .wrapper {
@@ -548,11 +584,11 @@ input[type="submit"]{
   height: 0;
   top: 30px;
   left: 18px;
-  box-shadow: 0 10px 0 2px #353535, 0 18px 0 2px #353535, 0 26px 0 2px #353535;
-  -webkit-box-shadow: 0 10px 0 2px #353535, 0 18px 0 2px #353535, 0 26px 0 2px #353535;
-  -moz-box-shadow: 0 10px 0 2px #353535, 0 18px 0 2px #353535, 0 26px 0 2px #353535;
-  -o-box-shadow: 0 10px 0 2px #353535, 0 18px 0 2px #353535, 0 26px 0 2px #353535;
-  -ms-box-shadow: 0 10px 0 2px #353535, 0 18px 0 2px #353535, 0 26px 0 2px #353535;
+  box-shadow: 0 10px 0 2px #656565, 0 18px 0 2px #656565, 0 26px 0 2px #656565;
+  -webkit-box-shadow: 0 10px 0 2px #656565, 0 18px 0 2px #656565, 0 26px 0 2px #656565;
+  -moz-box-shadow: 0 10px 0 2px #656565, 0 18px 0 2px #656565, 0 26px 0 2px #656565;
+  -o-box-shadow: 0 10px 0 2px #656565, 0 18px 0 2px #656565, 0 26px 0 2px #656565;
+  -ms-box-shadow: 0 10px 0 2px #656565, 0 18px 0 2px #656565, 0 26px 0 2px #656565;
 }
 
 .menu {
@@ -574,6 +610,7 @@ input[type="submit"]{
     line-height: 60px;
     border-bottom: 1px solid #efefef;
     margin: 0;
+    font-size: 16px;
 }
 .menu a:hover {
   background:#439cd5;
@@ -669,10 +706,23 @@ input[type="submit"]{
         margin-bottom: 15px;
     }
     .sec-title h1{
-        font-size: 28px;
+        font-size: 24px;
     }
     .pattern-item{
-        margin: 10px 0;
+        margin:5px 0;
+    }
+    .main-container{
+        margin-top: 15px;
+    }
+    .margin2em{
+        margin: 1em 0;
+    }
+    .wrapper {
+        width: 90%;
+    }
+    .col-xs-6 {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 @media only screen and (max-width: 320px) {
