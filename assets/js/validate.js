@@ -44,7 +44,7 @@ $(function () {
             $(form).ajaxSubmit({
                 type: "POST",
                 data: $(form).serialize(),
-                url: "https://script.google.com/macros/s/AKfycbwZmdjiK5AU52hfw2xPKBtl4dxpGChrcJtKOilCSQ/exec",
+                url: "https://script.google.com/macros/s/AKfycbylyQjIl1gu5rgDBlO02nwQyG5kkdxev1qJx2E4LNBQFsVSO--R/exec",
                 success: function () {
                   //  window.location.href = 'ThankYou.html'; 
                     $('#success').fadeIn();
