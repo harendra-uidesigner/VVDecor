@@ -63,17 +63,23 @@
                 <div class="col col-md-5">
                   <div class="desc-view">
                     <h2>Target Markets</h2>
-                    <ul>
-                      <li>USA</li>
-                      <li>UK</li>
-                      <li>EU</li>
-                      <li>MIDDLE EAST</li>
-                      <li>FAR EAST</li>
+                    <ul id="country_list">
+                      <li id="usa">USA</li>
+                      <li id="uk">UK </li>
+                      <li id="eu">EU</li>
+                      <li id="me">MIDDLE EAST</li>
+                      <li id="fe">FAR EAST</li>
                     </ul>
                   </div>
                 </div>
                 <div class="col col-md-offset-1 col-md-6">
-                  <img src="assets/images/Map.jpg" alt="" />
+                  <ul id="maps">
+                    <li id="usa"><img src="assets/images/maps/usa.jpg" alt="" /></li>
+                    <li id="uk"><img src="assets/images/maps/uk.jpg" alt="" /></li>
+                    <li id="eu"><img src="assets/images/maps/eu.jpg" alt="" /></li>
+                    <li id="me"><img src="assets/images/maps/me.jpg" alt="" /></li>
+                    <li id="fe"><img src="assets/images/maps/fe.jpg" alt="" /></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -118,6 +124,40 @@
         });
 
       })(jQuery);
+
+      $('#maps li').hide();
+
+      var flag = 0;
+
+      if (flag == 0) {
+        $('#maps #usa').show();
+        flag = 1;
+      }
+
+      $('#country_list #usa').click(function () {
+        $('#maps li').hide();
+        $('#maps #usa').show();
+      });
+
+      $('#country_list #uk').click(function () {
+        $('#maps li').hide();
+        $('#maps #uk').show();
+      });
+
+      $('#country_list #eu').click(function () {
+        $('#maps li').hide();
+        $('#maps #eu').show();
+      });
+
+      $('#country_list #me').click(function () {
+        $('#maps li').hide();
+        $('#maps #me').show();
+      });
+
+      $('#country_list #fe').click(function () {
+        $('#maps li').hide();
+        $('#maps #fe').show();
+      });
 
     });
   </script>
