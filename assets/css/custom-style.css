@@ -301,7 +301,7 @@ float: left;
 }
 .footer_logo img{
  display:block;
- width:120px;
+ width:100px;
 }
 .footer_links li{
  display: inline-block;
@@ -322,6 +322,11 @@ float: left;
  font-size: 15px;
  color: #bbe5ff;
 }
+.copy-right span{
+    font-size: 20px;
+    position: relative;
+    bottom: -2px;
+}
 .margin2em{
     margin: 2em 0;
 }
@@ -338,7 +343,7 @@ float: left;
 }
 /* Contact */
 .contact-section{
-    padding:5% 0;
+    padding:5.6% 0;
 }
 .contact-form {
     position: relative;
@@ -466,7 +471,7 @@ input[type="submit"]{
 .contact-info .info-block {
     position: relative;
     display: block;
-	margin-bottom:15px;
+	margin-bottom:20px;
 }
 
 .contact-info .info-block .inner-box {
@@ -487,7 +492,7 @@ input[type="submit"]{
     color: #296bb9;
 }
 .contact-info .info-block .inner-box p{
-    margin: 2px 0;
+    margin:5px 0;
     color: #222;
 }
 
