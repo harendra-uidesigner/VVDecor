@@ -162,13 +162,14 @@ float: left;
     height: 15px;
     background-color: #FFF;
     margin: 0 5px !important;
-    border: none;
+    border: 1px solid #ccedff;
 }
 
 .carousel-indicators .active {
     width: 15px;
     height: 15px;
     background-color: #439cd5;
+    border-color: #439cd5;
 }
 .main-container{
     padding:2.5% 0;
