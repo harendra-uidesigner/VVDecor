@@ -62,6 +62,7 @@ img{max-width:100%;border: none;}
 }
 body {
     font-family: 'Conv_TTNorms-Regular', sans-serif;
+    font-variant-ligatures: none;
     color: #555555;
     background: #f1f9ff;
 }
